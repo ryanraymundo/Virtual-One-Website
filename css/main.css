@@ -1,0 +1,1751 @@
+    * {
+        box-sizing: border-box;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        /* 1 */
+        display: table;
+        /* 2 */
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    
+    html {
+        font-family: sans-serif;
+        font-size: 1rem;
+        line-height: 1.5em;
+        margin: 0 auto;
+    }
+    
+    body {
+        color: black;
+        text-align: center;
+        background: linear-gradient(to bottom, #cecece 10%, #595959 100%);
+        margin: 0 auto;
+        padding-top: 106px;
+    }
+    
+    header {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        background-color: black;
+        background-position: center;
+        font-size: 15px;
+        padding: 0px 8px 0 8px;
+        box-shadow: 1px 1px 5px black;
+        z-index: 3000;
+    }
+    
+    header img {
+        max-height: 100%;
+        background-position: center;
+        padding-top: -1px;
+    }
+    /*  /this is css of index page/*/
+    
+    .home_page {}
+    
+    main {
+        /*background-color: aqua;*/
+        /*    min-height: 500px;*/
+    }
+    
+    .home_pagetitle {
+        /*     background-color: blue;*/
+        margin-top: 80px;
+        max-width: 70%;
+        position: relative;
+        background-position: center;
+    }
+    
+    .home_page img {
+/*        background-color: blue;*/
+        background-position: top;
+        max-width: 100%;
+        position: absolute;
+        margin: -50px 0px 0px 0px left: 0;
+        right: 0;
+        z-index: -3000;
+    }
+    
+    .logo-row {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        padding-top: 10px;
+        z-index: 3000;
+        background-color: black;
+    }
+    
+    .logo-row i {
+        color: white;
+        font-size: 1.5rem;
+        font font-family: sans-serif;
+        line-height: 1.2;
+        margin: 0;
+        padding: 0;
+        cursor: pointer;
+    }
+    
+    .main-nav {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 2000;
+        transform: translateY(-100%);
+        transition: 200ms ease;
+    }
+    
+    .main-nav.open {
+        transform: translateY(0);
+    }
+    
+    .main-nav ul {
+        background-color: black;
+        list-style: none;
+        padding: 0 18px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .main-nav a {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 3;
+        display: block;
+    }
+    
+    .main-nav a:hover {
+        color: red;
+    }
+    
+    .sub-nav {
+        position: absolute;
+        left: 0;
+        width: 100%;
+        z-index: 2000;
+        transform: translateY(-100%);
+        transition: 200ms ease;
+    }
+    
+    .sub-nav.open {
+        transform: translateY(0);
+    }
+    
+    .sub-nav ul {
+        list-style: none;
+        padding: 0 18px;
+        margin: auto;
+        width: 100%;
+        text-align: center;
+    }
+    
+    .sub-nav a {
+        text-decoration: none;
+        background-color: black;
+        color: white;
+        font-size: 1rem;
+        text-align: center;
+        line-height: 3;
+        display: block;
+    }
+    
+    .v1-table {
+        max-width: 720px;
+        /*	background: linear-gradient(to top, #800000 0%, #e60000 100%);*/
+        background-position: center;
+    }
+    
+    .sub-nav a:hover {
+        color: red;
+    }
+    /*nav for desktop sizes */
+    
+    .v1-headerstrip {
+        position: fixed;
+        width: 100%;
+        height: 20%;
+        margin-top: -110px;
+        /*		background-color: brown;*/
+    }
+    
+    .v1-headerstrip img {
+        width: 120%;
+        height: 30%;
+    }
+    
+    .v1-logo {
+        position: fixed;
+        width: 100%;
+        margin-top: -220px;
+        background-position: top;
+        /*		background-color: blue;*/
+    }
+    
+    .v1-logo img {
+        position: relative;
+        width: 18%;
+        background-position: left;
+        margin-top: -40px;
+        padding: 5px 5px 5px 10px;
+        position: absolute;
+        /*background color: orangered;*/
+        z-index: 3000;
+    }
+    
+    .v1-headerstrip ul {
+        color: white;
+        display: flex;
+        align-content: space-around;
+        margin: -40px 0px 0px 250px;
+        list-style: none;
+        width: 60%;
+    }
+    
+    .v1-headerstrip a {
+        text-decoration: none;
+        /*	background-color: black;*/
+        color: red;
+        font-size: .7.5rem;
+        padding-left: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+    /*nav for desktop sizes*/
+    
+    .wrapper {
+        padding: 10px;
+        margin: 0 auto;
+        /*    background-color: yellow;*/
+        max-width: 100%;
+    }
+    
+    .red-box {
+        background: linear-gradient(to top, #800000 0%, #e60000 100%);
+        padding-top: 70px;
+        max-width: 850px;
+        margin: -120px auto;
+        box-shadow: 1px 1px 5px black;
+    }
+    
+    .red-box h2 {
+        background-position: center;
+        color: white;
+        font-size: 2rem;
+        line-height: 1.25em;
+        text-align: center;
+        padding: 10px 12px 0 12px;
+    }
+    
+    .red-box h3 {
+        color: white;
+        font-size: 1.5rem;
+        text-align: center;
+        line-height: 1.25em;
+        padding: 0 20px 0 20px;
+    }
+    
+    .red-box p {
+        color: white;
+        font-size: 1rem;
+        font-family: sans-serif;
+        text-align: center;
+        padding: 0 15px 0 15px;
+    }
+    
+    .red-box button {
+        background-color: white;
+        border-color: crimson;
+        background-position: center;
+        border-radius: 10px;
+        color: #e60000;
+        font-size: .7rem;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    h5 {
+        color: black;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .ftwrapper P {
+        width: 100%;
+        background-color: #000;
+        color: white;
+        font-size: .75em;
+        text-align: center;
+        background-position: bottom;
+        margin 0;
+        height: 100px;
+        padding-bottom: 10px 10px 0px 10px;
+    }
+    
+    .sponsor-logo1,
+    .sponsor-logo2,
+    .sponsor-logo3 {
+        padding: 5px;
+        margin: 5px;
+    }
+    
+    .major-sponsors {
+        display: flow-root;
+        flex: auto;
+        max-width: 100%;
+        margin: auto;
+    }
+    /*/this is css of about page/*/
+    
+    .about {}
+    
+    .about_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .the-story p {
+        color: white;
+        font-size: 1.rem;
+        font-family: sans-serif;
+        text-align: left;
+        padding: 10px 15px 0 15px
+    }
+    
+    .the-story img {
+        max-width: 98%;
+        background-color: #e60000;
+        padding: 2px;
+    }
+    
+    .about_page {
+        background-image: url(../img/about-us-page.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        max-height: 100%;
+    }
+    /*  /this is css of tournament page/   */
+    
+    .tournament {
+        background-position: center;
+        /* background-color: yellow;*/
+    }
+    
+    .tournament h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .tournament h3 {
+        color: #e60000;
+        text-align: center;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        padding: 10px 15px 0 15px
+    }
+    
+    .tournament p {
+        color: black;
+        font-size: 1.rem;
+        font-family: sans-serif;
+        text-align: left;
+        padding: 10px 15px 0 15px;
+    }
+    /*  /this is css of formula vr page/   */
+    
+    .fomulavr {}
+    
+    .the-technology h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .the-technology h3 {
+        color: #e60000;
+        text-align: left;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        padding: 10px 15px 0 15px
+    }
+    
+    .the-technology p {
+        color: #17202A;
+        font-size: 1.rem;
+        font-family: sans-serif;
+        text-align: left;
+        padding: 10px 15px 0 15px
+    }
+    
+    .the-technology video {
+        width: 100%;
+        max-width: 850px;
+        background-position: center;
+        padding: 10px;
+        color: grey;
+        margin: 10px 0 10px 0;
+        box-shadow: 1px 1px 5px black;
+    }
+    /*  /this is css of ticket page/   */
+    
+    ticket_page {}
+    
+    .ticket_page {
+        background-image: url(../img/ticket-page.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        max-height: 100%;
+    }
+    
+    .ticket_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 15px 0px 15px 0px;
+    }
+    
+    .ticket_page h4 {
+        color: white;
+        text-align: center;
+        font-size: 1.25rem;
+        line-height: 1.5em;
+        padding: 75px 0px 15px 0px;
+    }
+    
+    .ticket_container {
+        padding-top: 10px;
+		padding-bottom: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    /* bronze pass ticket */
+    
+    .bronze-pass {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 25px 0px 5px 0px;
+        margin: 10px 10px 0px 10px;
+        width: 300px;
+    }
+    
+    .bronze-pass h3 {
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        padding: 10px 15px -25px 15px;
+        background-color: #BD8230;
+    }
+    
+    .bronze-pass p {
+        color: #17202A;
+        font-size: .8.rem;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        padding: -20px 15px 0 15px;
+    }
+    
+    .bronze-pass input[type=text],
+    .bronze-pass input[type=password] {
+        text-align: center;
+        width: 20%;
+        padding: 12px 0px 10px 0px;
+        margin: 8px 0px 0px -10px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .bronze-pass label {
+        text-align: left;
+        color: white;
+        margin: 8px 0px 0px -0px;
+        padding-right: 20px;
+    }
+    
+    .bronze-pass img {
+        background-position: top;
+        width: 300px;
+    }
+    
+    .bronze-pass button {
+        background-position: center;
+        width: 150px;
+        background-color: #e60000;
+        padding-bottom: 20px;
+    }
+    
+    .silver-pass {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 25px 0px 20px 0px;
+        margin: 10px 10px 0px 10px;
+        width: 300px;
+    }
+    
+    .silver-pass h3 {
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        padding: 10px 15px -25px 15px;
+        background-color: gray;
+    }
+    
+    .silver-pass p {
+        color: white;
+        font-size: .8.rem;
+        font-family: sans-serif;
+        text-align: center;
+        padding: -20px 15px 0 15px;
+    }
+    /* silver pass ticket */
+    
+    .silver-pass input[type=text],
+    .silver-pass input[type=password] {
+        text-align: center;
+        width: 20%;
+        padding: 12px 0px 10px 0px;
+        margin: 8px 5px 0px -5px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .silver-pass label {
+        text-align: left;
+        color: white;
+        margin: 8px 0px 0px -0px;
+        padding-right: 20px;
+    }
+    
+    .silver-pass img {
+        background-position: top;
+        width: 300px;
+    }
+    
+    .silver-pass button {
+        background-position: center;
+        width: 150px;
+        background-color: #e60000;
+        padding-bottom: 20px;
+    }
+    /* gold pass ticket */
+    
+    .gold-pass {
+        background-color: rgba(255, 255, 255, 0.2);
+        padding: 25px 0px 5px 0px;
+        margin: 10px 10px 0px 10px;
+        width: 300px;
+    }
+    
+    .gold-pass h3 {
+        color: white;
+        text-align: center;
+        margin-top: -10px;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        padding: 10px 15px -25px 15px;
+        background-color: #CDB559;
+    }
+    
+    .gold-pass p {
+        color: white;
+        font-size: .8.rem;
+        font-family: sans-serif;
+        text-align: center;
+        padding: -20px 15px 0 15px;
+    }
+    
+    .gold-pass input[type=text],
+    .gold-pass input[type=password] {
+        text-align: center;
+        width: 20%;
+        padding: 12px 0px 10px 0px;
+        margin: 8px 5px 0px -5px;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    
+    .gold-pass label {
+        color: white;
+        text-align: left;
+        margin: 8px 0px 0px -0px;
+        padding-right: 20px;
+    }
+    
+    .gold-pass img {
+        background-position: top;
+        width: 300px;
+    }
+    
+    .gold-pass button {
+        background-position: center;
+        background-color: #e60000;
+        width: 150px;
+        padding-bottom: 0px 5px 5px 5px;
+    }
+    /*  /this is css of News page/   */
+    
+    news_page {}
+    
+    .news_page {
+        background-image: url(../img/ticket-page.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    .news_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 15px 15px 15px 15px;
+        text-decoration-style: none;
+    }
+    
+    .news_page h3 {
+        color: white;
+        text-align: left;
+        margin-top: 50px;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        max-width: 100%;
+        background-position: center;
+        padding: 10px 50px 50px 15px;
+    }
+    
+    .news_container {
+        display: flex;
+        max-width: 950px;
+        flex-wrap: wrap;
+        background-position: center;
+        text-decoration: none;
+        /*	background-color: aquamarine;*/
+    }
+    
+    .news_container h5:hover {
+        color: black;
+    }
+    
+    .late_news_container {
+        display: flex;
+        max-width: 950px;
+        flex-wrap: wrap;
+        background-position: center;
+        text-decoration: none;
+    }
+    
+    .late_news_container h5:hover {
+        color: red;
+    }
+    
+    .f1-news {
+        background-color: #e60000;
+        color: white;
+        padding: 25px 0px 5px 0px;
+        margin: auto;
+        margin-top: 10px;
+        width: 300px;
+    }
+    
+    .f1-news img {
+        background-position: top;
+        width: 300px;
+        margin-top: -25px;
+    }
+    
+    .f1-news h5 {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.2rem;
+        line-height: 1.25em;
+        font-family: sans-serif;
+        padding: 10px 15px -25px 15px;
+        text-decoration: none;
+    }
+    
+    .f1-news p {
+        color: #17202A;
+        font-size: .7.rem;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        padding: -20px 15px 0px 0px;
+        text-decoration: none;
+    }
+    
+    .motogp {
+        background-color: #e60000;
+        color: white;
+        padding: 25px 0px 5px 0px;
+        margin: auto;
+        margin-top: 10px;
+        width: 300px;
+    }
+    
+    .motogp img {
+        background-position: top;
+        width: 300px;
+        margin-top: -25px;
+    }
+    
+    .motogp p {
+        color: #17202A;
+        font-size: .7.rem;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        padding: -20px 15px 0px 0px;
+        text-decoration: none;
+    }
+    
+    .motogp h5 {
+        color: white;
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1.2rem;
+        line-height: 1.25em;
+        font-family: sans-serif;
+        text-decoration-style: none;
+        padding: 10px 15px -25px 15px;
+        text-decoration: none;
+    }
+    
+    .recent-news {
+        display: inline-flex;
+        padding: 0px 0px 0px 0px;
+        margin: 10px 0px 10px 0px;
+        height: 250px;
+        width: 950px;
+        white-space: pre-wrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+    
+    .recent-news img {
+        flex-grow: 600px;
+        margin: 0px 0px 10px 0px;
+        height: 337px;
+        background-position: center;
+    }
+    
+    .recent-news h5 {
+        color: white;
+        flex-wrap: wrap;
+        text-align: left;
+        font-size: 1.2rem;
+        margin-top: 130px;
+        margin-left: -260px;
+        line-height: 1.25em;
+        font-family: sans-serif;
+        text-decoration: none;
+        /*    background-color: chartreuse;*/
+    }
+    
+    .recent-news p {
+        color: #17202A;
+        display: run-in;
+        align-content: stretch;
+        margin: auto;
+        font-size: .7.rem;
+        color: white;
+        font-family: sans-serif;
+        text-align: left;
+        text-decoration-style: none;
+        width: 850px;
+        padding-left: 25px;
+        margin: 25px 0px 0px 0px;
+        text-decoration: none;
+    }
+    
+    .gaming-news {
+        margin: ;
+        20px 50px 20px 50px;
+        max-width: 100%;
+        background-position: center;
+        /*	background-color: greenyellow;*/
+    }
+    
+    .news_page h3 {
+        color: white;
+        text-align: left;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        padding: 5px 0px 5px 0px;
+    }
+    /*  /this is css of gallery page/   */
+    
+    gallery_page {}
+    
+    .gallery_page {
+        background-image: url(../img/ticket-page.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    
+    ..gallery_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 15px 15px 15px 15px;
+    }
+    
+    .gallery_page h3 {
+        color: white;
+        text-align: left;
+        margin-top: 50px;
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        max-width: 100%;
+        background-position: center;
+        padding: 10px 50px 50px 15px;
+    }
+    
+    .gallery_container {
+        display: flex;
+        max-width: 950px;
+		margin-left:25px; 
+        flex-wrap: wrap;
+        background-position: center;
+        z-index: -3000;
+        /*	background-color: aquamarine;*/
+    }
+    
+    .v1-news {
+        cursor: pointer;
+        height: 300px;
+        perspective: 600;
+        position: relative;
+        width: 300px;
+    }
+    
+    .card {
+        height: 100%;
+        position: absolute;
+        transform-style: preserve-3d;
+        transition: all 1s ease-in-out;
+        width: 100%;
+    }
+    
+    .card:hover {
+        transform: rotateY(180deg);
+    }
+    
+    .card .side {
+        backface-visibility: hidden;
+        height: 100%;
+        position: absolute;
+        overflow: hidden;
+        width: 100%;
+    }
+    
+    .card .back {
+        background: #eaeaed;
+        /*    color: #0087cc;*/
+        line-height: 300px;
+        text-align: center;
+        transform: rotateY(180deg);
+    }
+    
+    .v1-news {
+        color: white;
+        padding: 5px 5px 5px 5px;
+        margin: 5px 5px 5px 5px;
+        background-position: center;
+        width: 300px;
+    }
+    
+    .v1-news img {
+        background-position: top;
+        width: 300px;
+    }
+    
+    .v1-news p {
+        color: #17202A;
+        font-size: .7.rem;
+        color: white;
+        font-family: sans-serif;
+        text-align: center;
+        padding: -20px 15px 0px 0px;
+        text-decoration: none;
+    }
+    /*  /this is css of login page/   */
+    
+    login_page {}
+    
+    .logo {
+        justify-content: center;
+        position: relative;
+        margin-top: 170px;
+        max-width: 100%;
+        /*    background-color: blue;*/
+    }
+    
+    .login_page {
+        background-image: url(../img/v1-login-pageb.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        max-width: 100%;
+        /*	background-color: darkorange;*/
+    }
+    
+    .login_page h2 {
+        color: white;
+    }
+    
+    .login-box {
+        padding-top: 50px;
+        background-position: center;
+    }
+    /* Full-width input fields */
+    
+    input[type=text],
+    input[type=password] {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+    /* Set a style for all buttons */
+    
+    button {
+        background-color: #575656;
+        color: white;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+    }
+    /* Extra styles for the cancel button */
+    
+    .cancelbtn {
+        padding: 14px 20px;
+        background-color: #e60000;
+    }
+    /* Float cancel and signup buttons and add an equal width */
+    
+    .cancelbtn,
+    .signupbtn {
+        float: left;
+        width: 50%;
+    }
+    /* Add padding to container elements */
+    
+    .container {
+        padding: 20px 20px 20px 20px;
+        background-position: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 100%;
+    }
+    /* The Modal (background) */
+    
+    .modal {
+        display: none;
+        /* Hidden by default */
+        position: fixed;
+        /* Stay in place */
+        z-index: 1;
+        /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%;
+        /* Full width */
+        height: 100%;
+        /* Full height */
+        overflow: auto;
+        /* Enable scroll if needed */
+        background-color: rgb(0, 0, 0);
+        /* Fallback color */
+        background-color: rgba(0, 0, 0, 0.4);
+        /* Black w/ opacity */
+    }
+    /* Modal Content/Box */
+    
+    .modal-content {
+        background-color: #fefefe;
+        margin: 35% auto 15% auto;
+        /* 5% from the top, 15% from the bottom and centered */
+        border: 1px solid #888;
+        width: 80%;
+        max-width: 700px;
+        /* Could be more or less, depending on screen size */
+    }
+    /* The Close Button (x) */
+    
+    .close {
+        position: absolute;
+        right: 35px;
+        margin-top: -150px;
+        color: #e60000;
+        font-size: 20px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: red;
+        cursor: pointer;
+        /*	z-index: 3000;*/
+    }
+    /* Clear floats */
+    
+    .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    video {
+        width: 100%;
+        max-width: 850px;
+        /*object-position: center;*/
+        border color: dimgray;
+        margin: 130px 0 15px 0;
+        box-shadow: 1px 1px 5px black;
+    }
+    
+    table,
+    td {
+        /*    border-top: 2px solid white;*/
+        text-align: left;
+        margin-bottom: 10px;
+        align-content: stretch;
+    }
+    
+    td:first-child {
+        width: 75%;
+    }
+    
+    td:last-child {
+        width: 25%;
+    }
+    
+    th {
+        text-align: justify;
+        color: #e60000;
+    }
+    
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        max-width: 850px;
+        overflow-x: auto;
+        margin: 0 auto;
+    }
+    
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+    /*Media Query for Tablet sizes*/
+    
+    @media only screen and (min-width: 650px) {
+        body {
+            padding-top: 109px;
+        }
+        main {
+            /*background-color: aqua;*/
+            min-height: -500px;
+            margin-top: -10px
+        }
+		
+		.v1-headerstrip ul {
+        color: white;
+        display:none;
+        align-content: space-around;
+        margin: -40px 0px 10px 150px;
+        padding left: 50px;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .v1-headerstrip a {
+        text-decoration: none;
+        /*	background-color: black;*/
+        color: red;
+        font-size: .9rem;
+        padding-left: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .v1-headstrip ul:hover {
+        color: white;
+    }
+        .home_pagetitle {
+            /*     background-color: blue;*/
+            margin-top: 150px;
+            max-width: 60%;
+            position: relative;
+            background-position: center;
+        }
+        .home_page img {
+/*            background-color: blue;*/
+            background-position: top;
+            max-width: 100%;
+            position: absolute;
+            margin: -50px 0px 0px 0px left: 0;
+            right: 0;
+            z-index: -3000;
+        }
+        h3 {
+            color: black;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+        .red-box {
+            background-color: #e60000;
+            padding: 70px 30px 70px 50px;
+            max-width: 700px;
+            margin-top: -150px;
+        }
+		
+		.red-box h2 {
+        background-position: center;
+        color: white;
+        font-size: 1.9rem;
+        line-height: 1.25em;
+        text-align: center;
+        padding: 10px 12px 0 12px;
+    }
+		
+        video {
+            width: 100%;
+            max-width: 700px;
+            border color: dimgray;
+            margin: 150px 0px 10px 0px;
+        }
+    }
+    
+    .red-box button {
+        background-color: white;
+        border-color: crimson;
+        background-position: center;
+        border-radius: 10px;
+        color: #e60000;
+        width: 70%;
+        font-size: 1.rem;
+        margin-bottom: 20px;
+        width: 40%;
+        font-size: 1.25rem;
+        padding: 0px 10px 0px 10px;
+    }
+}
+.cancelbtn,
+.signupbtn {
+    width: 100%;
+}
+.ftwrapper P {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: .75em;
+    text-align: center;
+    background-position: bottom;
+    height: 100px;
+    padding-top: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+/*Media Query for Desktop sizes*/
+@media only screen and (min-width: 950px) {
+    .intro-video {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 2147483647;
+    }
+    
+    main {
+        /*background-color: aqua;*/
+        min-height: -500px;
+        margin-top: -110px
+    }
+    
+    .home_pagetitle {
+        /*     background-color: blue;*/
+        margin-top: 450px;
+        max-width: 70%;
+        position: relative;
+        background-position: center;
+    }
+    
+    .home_page img {
+/*        background-color: blue;*/
+        background-position: top;
+        max-width: 100%;
+        position: absolute;
+        margin: -50px 0px 0px 0px left: 0;
+        right: 0;
+        z-index: -3000;
+    }
+    
+    .v1-headerstrip {
+        position: fixed;
+        width: 100%;
+        height: 20%;
+        margin-top: -110px;
+        /*		background-color: brown;*/
+    }
+    
+    .v1-headerstrip img {
+        width: 120%;
+        height: 30%;
+    }
+    
+    .v1-logo {
+        position: fixed;
+        width: 100%;
+        margin-top: -220px;
+        background-position: top;
+        /*		background-color: blue;*/
+    }
+    
+    .v1-logo img {
+        position: relative;
+        width: 15%;
+        background-position: left;
+        margin-top: -40px;
+        padding: 5px 5px 5px 10px;
+        position: absolute;
+        /*		background color: orangered;*/
+        z-index: 3000;
+    }
+    
+    .v1-headerstrip ul {
+        color: white;
+        display: flex;
+        align-content: space-around;
+        margin: -40px 0px 10px 270px;
+        padding left: 60px;
+        list-style: none;
+        width: 60%;
+    }
+    
+    .v1-headerstrip a {
+        text-decoration: none;
+        /*	background-color: black;*/
+        color: red;
+        font-size: .7.5rem;
+        padding-left: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .v1-headstrip ul:hover {
+        color: white;
+    }
+    
+    .home_page img {
+/*        background-color: greenyellow;*/
+        justify-content: center;
+        max-width: 100%;
+        position: absolute;
+        margin: 0 auto;
+        left: 0;
+        right: 0;
+        z-index: -3000;
+    }
+    
+    .logo-row {
+        display: none;
+        justify-content: space-between;
+        position: relative;
+        z-index: 3000;
+        /*    background-color: green;*/
+    }
+    
+    header {
+        position: fixed;
+        display: none;
+        height: 6.5%;
+        width: 100%;
+/*        background-color: yellow;*/
+        justify-content: center;
+        font-size: 15px;
+        box-shadow: 1px 1px 5px black;
+        z-index: 3000;
+    }
+    
+    header img {
+        display: none;
+        max-height: 100%;
+        max-width: 100%;
+        float: left;
+        margin-top: 10px;
+        /*		background-color: aqua;*/
+    }
+    
+    h5 {
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    .red-box h2 {
+        background-position: center;
+        color: white;
+        font-size: 2.25rem;
+        line-height: 1.25em;
+        text-align: center;
+        padding: 30px 12px 0 12px;
+    }
+    
+    .red-box h3 {
+        color: white;
+        font-size: 1.75rem;
+        text-align: center;
+        line-height: 1.25em;
+        padding: 0 20px 0 20px;
+    }
+    
+    .red-box p {
+        color: white;
+        font-size: 1.45rem;
+        font-family: sans-serif;
+        text-align: center;
+        line-height: 1.5em;
+        padding: 0 50px 50px 50px;
+    }
+    
+    .red-box button {
+        background-color: white;
+        border-color: crimson;
+        background-position: center;
+        border-radius: 10px;
+        color: #e60000;
+        width: 40%;
+        font-size: 1.25rem;
+        padding: 0px 10px 0px 10px;
+    }
+    
+    .red-box {
+        background-color: #e60000;
+        padding: 10px 30px 70px 50px;
+        max-width: 850px;
+        margin-top: -120px;
+    }
+    
+    video {
+        width: 100%;
+        max-width: 850px;
+        border color: dimgray;
+        margin: 140px 0px 10px 0px;
+    }
+    
+    h3 {
+        color: black;
+        font-size: 2rem;
+        text-align: center;
+    }
+    
+    h5 {
+        color: #000;
+        font-size: 1.25rem;
+        text-align: center;
+    }
+    
+    .the-story h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 1.5rem;
+        line-height: 1.25em;
+        /*   padding: 150px 80px 0 80px;*/
+    }
+    
+    .the-story img {
+        max-width: 98%;
+        background-color: #e60000;
+        padding: 2px;
+    }
+    
+    .the-story p {
+        color: white;
+        font-size: 1.rem;
+        font-family: sans-serif;
+        text-align: left;
+    }
+    
+    .the-technology video {
+        background-position: center;
+        width: 100%;
+        max-width: 900px;
+        border color: dimgray;
+        margin: 10px 0 10px 0;
+        box-shadow: 1px 1px 5px black;
+    }
+    
+    .v1-logo {
+        background-position: center;
+        padding-top: 150px;
+        max-width: 25%;
+        /*        	background-color: blue;*/
+    }
+    
+    .sponsor-logo1,
+    .sponsor-logo2,
+    .sponsor-logo3 {
+        padding: 5px 5px 5px 5px;
+        margin: 5px 5px 5px 5px;
+    }
+    
+    .major-sponsors {
+        display: flex;
+        justify-content: center;
+        max-width: 90%;
+    }
+    
+    .ticket container {
+        flex-direction: column;
+    }
+    
+    .wrapper {
+        max-width: 980px;
+        /*      background-color: greenyellow;*/
+    }
+    
+    .cancelbtn,
+    .signupbtn {
+        width: 100%;
+    }
+    /*    /h2 pages/*/
+    
+    .about_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 75px 15px 15px 15px;
+    }
+    
+    .tournament h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 75px 15px 15px 15px;
+    }
+    
+    .the-technology h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 75px 15px 15px 15px;
+    }
+    
+    .gallery_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 75px 15px 15px 15px;
+    }
+    
+    .news_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 75px 15px 15px 15px;
+    }
+    
+    .ticket_page h2 {
+        text-align: left;
+        color: #e60000;
+        margin: 0 auto;
+        font-size: 2rem;
+        line-height: 1.25em;
+        padding: 75px 15px 15px 15px;
+    }
+    
+    .ftwrapper P {
+        width: 100%;
+        background-color: #000;
+        color: white;
+        font-size: .75em;
+        text-align: center;
+        background-position: bottom;
+        height: 100px;
+        margin: 20px 0px 0px 0px;
+    }
+	
+	@media only screen and (device-width: 768px) {
+		body {
+            padding-top: 109px;
+        }
+        main {
+            /*background-color: aqua;*/
+            min-height: -500px;
+            margin-top: -10px
+        }
+		
+		.v1-headerstrip ul {
+        color: white;
+        display:flex;
+        align-content: space-around;
+        margin: -40px 0px 10px 150px;
+        padding left: 50px;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .v1-headerstrip a {
+        text-decoration: none;
+        	background-color: black;
+        color: red;
+        font-size: .8rem;
+        padding-left: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .v1-headstrip ul:hover {
+        color: white;
+    }
+        .home_pagetitle {
+            /*     background-color: blue;*/
+            margin-top: 150px;
+            max-width: 60%;
+            position: relative;
+            background-position: center;
+			 z-index: -3000;
+        }
+        .home_page img {
+/*            background-color: blue;*/
+            background-position: top;
+            max-width: 100%;
+            position: absolute;
+            margin: -50px 0px 0px 0px left: 0;
+            right: 0;
+            z-index: -3000;
+        }
+        h3 {
+            color: black;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+        .red-box {
+            background-color: #e60000;
+            padding: 70px 30px 70px 50px;
+            max-width: 700px;
+            margin-top: -150px;
+        }
+		
+		.red-box h2 {
+        background-position: center;
+        color: white;
+        font-size: 1.9rem;
+        line-height: 1.25em;
+        text-align: center;
+        padding: 10px 12px 0 12px;
+    }
+		
+        video {
+            width: 100%;
+            max-width: 700px;
+            border color: dimgray;
+            margin: 150px 0px 10px 0px;
+        }
+    }
+    
+    .red-box button {
+        background-color: white;
+        border-color: crimson;
+        background-position: center;
+        border-radius: 10px;
+        color: #e60000;
+        width: 70%;
+        font-size: 1.rem;
+        margin-bottom: 20px;
+        width: 40%;
+        font-size: 1.25rem;
+        padding: 0px 10px 0px 10px;
+    }
+}
+.cancelbtn,
+.signupbtn {
+    width: 100%;
+}
+.ftwrapper P {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: .75em;
+    text-align: center;
+    background-position: bottom;
+    height: 100px;
+    padding-top: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+		
+}
+
+@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) {
+  body {
+            padding-top: 109px;
+        }
+        main {
+            /*background-color: aqua;*/
+            min-height: -500px;
+            margin-top: -10px
+        }
+		
+		.v1-headerstrip ul {
+        color: white;
+        display:flex;
+        align-content: space-around;
+        margin: -40px 0px 10px 150px;
+        padding left: 50px;
+        list-style: none;
+        width: 100%;
+    }
+    
+    .v1-headerstrip a {
+        text-decoration: none;
+        	background-color: black;
+        color: red;
+		display: none;
+        font-size: .8rem;
+        padding-left: 20px;
+        text-align: center;
+        line-height: 2;
+    }
+    
+    .v1-headstrip ul:hover {
+        color: white;
+    }
+        .home_pagetitle {
+            /*     background-color: blue;*/
+            margin-top: 150px;
+            max-width: 60%;
+            position: relative;
+            background-position: center;
+        }
+        .home_page img {
+/*            background-color: blue;*/
+            background-position: top;
+            max-width: 100%;
+            position: absolute;
+            margin: -50px 0px 0px 0px left: 0;
+            right: 0;
+            z-index: -3000;
+        }
+        h3 {
+            color: black;
+            font-size: 1.75rem;
+            text-align: center;
+        }
+        .red-box {
+            background-color: #e60000;
+            padding: 70px 30px 70px 50px;
+            max-width: 700px;
+            margin-top: -150px;
+        }
+		
+		.red-box h2 {
+        background-position: center;
+        color: white;
+        font-size: 1.9rem;
+        line-height: 1.25em;
+        text-align: center;
+        padding: 10px 12px 0 12px;
+    }
+		
+        video {
+            width: 100%;
+            max-width: 700px;
+            border color: dimgray;
+            margin: 150px 0px 10px 0px;
+        }
+    }
+    
+    .red-box button {
+        background-color: white;
+        border-color: crimson;
+        background-position: center;
+        border-radius: 10px;
+        color: #e60000;
+        width: 70%;
+        font-size: 1.rem;
+        margin-bottom: 20px;
+        width: 40%;
+        font-size: 1.25rem;
+        padding: 0px 10px 0px 10px;
+    }
+}
+.cancelbtn,
+.signupbtn {
+    width: 100%;
+}
+.ftwrapper P {
+    width: 100%;
+    background-color: #000;
+    color: white;
+    font-size: .75em;
+    text-align: center;
+    background-position: bottom;
+    height: 100px;
+    padding-top: 10px;
+    margin: 30px 0px 0px 0px;
+}
+
+	
+	
+	
